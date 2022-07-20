@@ -7,3 +7,9 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
+
+test('renders learn react link with random messaje', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/random mesage/i);
+  expect(linkElement).toBeInTheDocument();
+});
