@@ -10,6 +10,6 @@ test('renders learn react link', () => {
 
 test('renders learn react link with random messaje', () => {
   render(<App />);
-  const linkElement = screen.getByText(/random meesage/);
+  const linkElement = screen.getByText(/random mesage/i);
   expect(linkElement).toBeInTheDocument();
 });
